@@ -1,0 +1,25 @@
+<sn-scroll-spy-section id="{{ desObj.section }}" for="navItemList">
+<div class="description-holder relative" id="{{ desObj.section }}" >
+  <div class="row no-gutters selected-description">
+    <div class="col-6 info-holder item-desc padding-xl padding-top-sm">
+      <app-details
+        [title]="desObj.header"
+        [description]="desObj.detail"
+      ></app-details>
+    </div>
+    <div class="col-6 info-holder background-code-mode text-white padding-top-xxl padding-bottom-md ">
+      <div class="border-top">
+          <div class="text-center padding-lg text-gray " *ngIf="showEmptyText">
+            No related information present
+          </div>
+        <div class="background-dark margin-md padding-lg" *ngIf="!noEndpoint">
+          <app-endpoint-view [endPoint]="desObj.endPoint"></app-endpoint-view>
+        </div>
+        <div class="background-dark margin-md padding-lg" *ngIf="!noData">
+          <app-json-view [data]="desObj.data"></app-json-view>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</sn-scroll-spy-section>

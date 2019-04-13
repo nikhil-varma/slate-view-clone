@@ -1,0 +1,14 @@
+<div class="header background-primary">
+    <app-header ></app-header>
+</div>
+
+<div class="content ">
+    <div class="navigation fixed full-height background-gray padding-top-md ">
+        <app-navigation></app-navigation>
+    </div>
+    <div class="description absolute full-height">
+        <div *ngFor="let item of description" >
+          <app-description [desObj]="item"></app-description>
+        </div>
+    </div>
+</div>

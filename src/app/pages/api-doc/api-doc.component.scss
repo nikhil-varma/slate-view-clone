@@ -1,0 +1,21 @@
+$header-height: 80px;
+$nav-width: 200px;
+.header {
+  width: 100%;
+  height: $header-height;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  height: calc(100% - #{$header-height});
+  overflow-y: scroll;
+  .navigation {
+    width: $nav-width;
+    overflow-y: scroll;
+  }
+  .description {
+    width: calc(100% - #{$nav-width});
+    right: 0;
+  }
+}

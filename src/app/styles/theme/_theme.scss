@@ -1,0 +1,29 @@
+$primary: #673ab7;
+$code-mode: #18355c;
+$url: #e6db74;
+
+$background: (
+  gray: #f3f3f3,
+  primary: $primary,
+  code-mode: $code-mode,
+  dark: #0c2342
+);
+$text: (
+  gray: #8b9196,
+  selected: #1f3152,
+  primary: $primary,
+  dark: #252525,
+  url: $url
+);
+
+@each $c, $v in $background {
+  .background-#{$c} {
+    background-color: $v;
+  }
+}
+
+@each $c, $v in $text {
+  .text-#{$c} {
+    color: $v;
+  }
+}

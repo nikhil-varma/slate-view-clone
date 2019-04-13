@@ -1,0 +1,45 @@
+body {
+  font-size: 16px;
+}
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.full-height{
+  height: 100%;
+}
+
+.full-width{
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: white;
+  }
+  &.active {
+    color: darkblue;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}

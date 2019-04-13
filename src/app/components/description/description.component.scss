@@ -1,0 +1,12 @@
+.selected-description {
+  font-size: 0.9em;
+}
+
+@media (max-width:1000px) {
+.description-holder{
+ .info-holder{
+   flex: 100%;
+   max-width: 100%;
+ }
+}
+}

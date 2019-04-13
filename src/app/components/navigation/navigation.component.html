@@ -1,0 +1,10 @@
+<div class="nav-list" role="navigation" >
+  <div class="custom-nav-item" *ngFor="let i of navigationItems" snScrollSpy id="navItemList" >
+    <div class="nav-header ellipsis padding-left-md text-gray font-weight-bold">{{i.header}}</div>
+    <a class="nav-item ellipsis padding-left-md padding-right-md text-gray"
+    href="#{{n.section}}" [ngClass]="{'text-dark font-weight-bold': currentSection === n.section}"
+    *ngFor="let n of i.items" (click)="storeActiveSection(n.section)">{{n.label}}</a>
+  </div>
+</div>
+
+
